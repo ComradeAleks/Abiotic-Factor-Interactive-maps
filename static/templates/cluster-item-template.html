@@ -1,0 +1,11 @@
+<!-- Cluster item tepmplate -->
+<div class="cluster-item {{checkedClass}}" data-marker-id="{{markerId}}" data-entry-index="{{entryIndex}}">
+  <img src="{{imageSrc}}" alt="{{name}}" class="cluster-item-img" onerror="this.src='/data/assets/Unknown.png'">
+  <div class="cluster-item-info">
+    <span class="cluster-item-name">{{name}}</span>
+    <label class="cluster-item-checkbox">
+      <input type="checkbox" class="cluster-item-check" {{checked}}>
+      <span>Completed</span>
+    </label>
+  </div>
+</div>

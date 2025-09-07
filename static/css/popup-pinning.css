@@ -1,0 +1,114 @@
+.popup-drag-handle {
+  cursor: move;
+  padding: 4px 8px;
+  color: #888;
+  font-weight: bold;
+  user-select: none;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.popup-pin-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 4px;
+  margin-right: 8px;
+  color: #888;
+}
+.popup-unpin-btn {
+  color: #ff6b47 !important;
+}
+
+.pinned-popup-counter {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  z-index: 3;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  pointer-events: none;
+}
+
+.popup-pinned {
+  border: 2px solid #4CAF50 !important;
+  box-shadow: 0 8px 32px rgba(76, 175, 80, 0.3) !important;
+  z-index: 2 !important;
+}
+
+.popup-pinned .popup-header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d4a2d 100%) !important;
+}
+
+.popup-drag-handle {
+  opacity: 0.7;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.popup-drag-handle:hover {
+  color: #4CAF50 !important;
+  opacity: 1;
+}
+
+.popup-pin-btn {
+  transition: all 0.2s;
+}
+
+.popup-pin-btn:hover {
+  color: #4CAF50 !important;
+  transform: scale(1.1);
+}
+
+.popup-unpin-btn {
+  transition: all 0.2s;
+}
+
+.popup-unpin-btn:hover {
+  color: #ff4444 !important;
+  transform: scale(1.1);
+}
+
+.pinned-popup-counter {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(76, 175, 80, 0.9);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .popup-drag-handle {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  
+  .popup-pin-btn,
+  .popup-unpin-btn {
+    font-size: 16px;
+    padding: 4px 6px;
+  }
+}
+
+.marker-popup:hover .popup-drag-handle {
+  opacity: 1;
+}
+
+.popup-pinned.cluster-popup {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.popup-pinned.cluster-popup .popup-content {
+  max-height: 60vh;
+  overflow-y: auto;
+}

@@ -1,0 +1,39 @@
+{
+  "1756892939024_Bag_Wall_Curve": {
+    "name": "Bag Wall (Curve)",
+    "category": "Base and Building/Base defense",
+    "subcategory": "",
+    "wiki": "https://abioticfactor.wiki.gg/wiki/Bag_Wall_(Curve)",
+    "location": "Unknown",
+    "type": "Unknown",
+    "drops": [],
+    "Drops": [],
+    "harvestableDrops": [],
+    "Harvestable Drops": [],
+    "trades": [],
+    "Trade": [],
+    "Butchering": [],
+    "Recipe": [
+      [
+        [
+          "Cement Bag"
+        ],
+        [
+          "Bag Wall (Curve)"
+        ]
+      ]
+    ],
+    "Scrap Result": [
+      "Cement Bag"
+    ],
+    "Farming": [],
+    "description": "",
+    "image": "https://abioticfactor.wiki.gg/images/a/aa/Itemicon_cementbagwall_curve.png?ba234a&format=original",
+    "additionalImage": "",
+    "customDescription": "",
+    "customLocation": "",
+    "notes": "",
+    "infoboxWidth": 366,
+    "infoboxHeight": 372
+  }
+}

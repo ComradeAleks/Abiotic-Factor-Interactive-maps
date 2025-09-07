@@ -1,0 +1,211 @@
+.preset-popup {
+  position: fixed;
+  width: 800px;
+  height: 550px;
+  background: #111;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.preset-popup-header {
+  margin-bottom: 15px;
+}
+
+.preset-popup-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.preset-popup-name-section {
+  margin-bottom: 10px;
+}
+
+.preset-name-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.preset-name-input {
+  width: 98%;
+  padding: 5px;
+  background: #222;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.preset-name-input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.preset-search-input {
+  width: 98%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background: #222;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.preset-search-input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.preset-tabs-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.preset-tab {
+  flex: 1;
+  min-width: 120px;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.preset-tab:hover,
+.preset-tab:focus {
+  background: #222;
+}
+
+.preset-tab.active {
+  background: #222;
+}
+
+.preset-subtabs-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.preset-subtab {
+  flex: 1;
+  min-width: 120px;
+  background: #111;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: inherit;
+}
+
+.preset-subtab:hover,
+.preset-subtab:focus {
+  background: #222;
+}
+
+.preset-subtab.active {
+  background: #222;
+}
+
+.preset-list-container {
+  overflow-y: auto;
+  height: 280px;
+  padding-right: 10px;
+  border: 1px solid #333;
+  background: #222;
+  border-radius: 4px;
+  padding: 10px;
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.preset-list-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+.preset-list-container label:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+}
+
+.preset-list-container input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.preset-popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  flex-shrink: 0;
+}
+
+.preset-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.2s;
+  font-family: inherit;
+  min-width: 80px;
+}
+
+.preset-button-delete {
+  background: #dc3545;
+  color: white;
+}
+
+.preset-button-delete:hover {
+  background: #c82333;
+}
+
+.preset-button-cancel {
+  background: #666;
+  color: white;
+}
+
+.preset-button-cancel:hover {
+  background: #777;
+}
+
+.preset-button-ok {
+  background: #0066cc;
+  color: white;
+}
+
+.preset-button-ok:hover {
+  background: #0056b3;
+}
+
+.preset-error-message {
+  color: #ff6666;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}

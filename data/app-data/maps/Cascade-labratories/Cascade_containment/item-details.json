@@ -1,0 +1,240 @@
+{
+  "1757075287946_Bag_Wall_Curve": {
+    "Butchering": [],
+    "Drops": [],
+    "Farming": [],
+    "Harvestable Drops": [],
+    "Recipe": [
+      [
+        [
+          "Cement Bag"
+        ],
+        [
+          "Bag Wall (Curve)"
+        ]
+      ]
+    ],
+    "Scrap Result": [
+      "Cement Bag"
+    ],
+    "Trade": [],
+    "additionalImage": "",
+    "category": "Base and Building/Base defense",
+    "customDescription": "",
+    "customLocation": "",
+    "description": "",
+    "drops": [],
+    "harvestableDrops": [],
+    "image": "https://abioticfactor.wiki.gg/images/a/aa/Itemicon_cementbagwall_curve.png?ba234a&format=original",
+    "infoboxHeight": 542,
+    "infoboxWidth": 522,
+    "location": "Unknown",
+    "name": "Bag Wall (Curve)",
+    "notes": "",
+    "subcategory": "",
+    "trades": [],
+    "type": "Unknown",
+    "wiki": "https://abioticfactor.wiki.gg/wiki/Bag_Wall_(Curve)"
+  },
+  "1757075301338_Bag_Wall_Curve": {
+    "Butchering": [],
+    "Drops": [],
+    "Farming": [],
+    "Harvestable Drops": [],
+    "Recipe": [
+      [
+        [
+          "Cement Bag"
+        ],
+        [
+          "Bag Wall (Curve)"
+        ]
+      ]
+    ],
+    "Scrap Result": [
+      "Cement Bag"
+    ],
+    "Trade": [],
+    "additionalImage": "",
+    "category": "Base and Building/Base defense",
+    "customDescription": "",
+    "customLocation": "",
+    "description": "",
+    "drops": [],
+    "harvestableDrops": [],
+    "image": "https://abioticfactor.wiki.gg/images/a/aa/Itemicon_cementbagwall_curve.png?ba234a&format=original",
+    "infoboxHeight": 336,
+    "infoboxWidth": 566,
+    "location": "Unknown",
+    "name": "Bag Wall (Curve)",
+    "notes": "",
+    "subcategory": "",
+    "trades": [],
+    "type": "Unknown",
+    "wiki": "https://abioticfactor.wiki.gg/wiki/Bag_Wall_(Curve)"
+  },
+  "1757081700241_Bag_Wall_Curve": {
+    "Butchering": [],
+    "Drops": [],
+    "Farming": [],
+    "Harvestable Drops": [],
+    "Recipe": [
+      [
+        [
+          "Cement Bag"
+        ],
+        [
+          "Bag Wall (Curve)"
+        ]
+      ]
+    ],
+    "Scrap Result": [
+      "Cement Bag"
+    ],
+    "Trade": [],
+    "additionalImage": "",
+    "category": "Base and Building/Base defense",
+    "customDescription": "",
+    "customLocation": "",
+    "description": "",
+    "drops": [],
+    "harvestableDrops": [],
+    "image": "https://abioticfactor.wiki.gg/images/a/aa/Itemicon_cementbagwall_curve.png?ba234a&format=original",
+    "infoboxHeight": 324,
+    "infoboxWidth": 554,
+    "location": "Unknown",
+    "name": "Bag Wall (Curve)",
+    "notes": "",
+    "subcategory": "",
+    "trades": [],
+    "type": "Unknown",
+    "wiki": "https://abioticfactor.wiki.gg/wiki/Bag_Wall_(Curve)"
+  },
+  "1757081700241_Barricade_Carbon": {
+    "Butchering": [],
+    "Drops": [],
+    "Farming": [],
+    "Harvestable Drops": [],
+    "Recipe": [
+      [
+        [
+          "Carbon Plating",
+          "Energy Brick",
+          "Kevlar Scrap",
+          "Metal Scrap"
+        ],
+        [
+          "Barricade (Carbon)"
+        ]
+      ]
+    ],
+    "Scrap Result": [],
+    "Trade": [],
+    "additionalImage": "",
+    "category": "Base and Building/Base defense",
+    "customDescription": "",
+    "customLocation": "",
+    "description": "",
+    "drops": [],
+    "harvestableDrops": [],
+    "image": "https://abioticfactor.wiki.gg/images/1/17/Itemicon_barricade_carbon.png?fe74fe&format=original",
+    "infoboxHeight": 356,
+    "infoboxWidth": 586,
+    "location": "Unknown",
+    "name": "Barricade (Carbon)",
+    "notes": "",
+    "subcategory": "",
+    "trades": [],
+    "type": "Unknown",
+    "wiki": "https://abioticfactor.wiki.gg/wiki/Barricade_(Carbon)"
+  },
+  "1757081700241_Disc_Turret": {
+    "Butchering": [],
+    "Drops": [],
+    "Farming": [],
+    "Harvestable Drops": [],
+    "Recipe": [
+      [
+        [
+          "Grinder",
+          "Carbon Plating",
+          "Reinforced Hose",
+          "Box of Screws"
+        ],
+        [
+          "Disc Turret"
+        ]
+      ]
+    ],
+    "Scrap Result": [
+      "Tech Scrap",
+      "Metal Scrap"
+    ],
+    "Trade": [],
+    "additionalImage": "",
+    "category": "Base and Building/Base defense",
+    "customDescription": "",
+    "customLocation": "",
+    "description": "",
+    "drops": [],
+    "harvestableDrops": [],
+    "image": "https://abioticfactor.wiki.gg/images/f/fa/Itemicon_discturret.png?562142&format=original",
+    "infoboxHeight": 324,
+    "infoboxWidth": 554,
+    "location": "Unknown",
+    "name": "Disc Turret",
+    "notes": "",
+    "subcategory": "",
+    "trades": [],
+    "type": "Unknown",
+    "wiki": "https://abioticfactor.wiki.gg/wiki/Disc_Turret"
+  },
+  "1757084142505_Bigogi": {
+    "Butchering": [],
+    "Drops": [
+      [
+        "Royal Pepper",
+        "1",
+        "100%"
+      ],
+      [
+        "Black Gunk",
+        "1",
+        "50%"
+      ]
+    ],
+    "Farming": [],
+    "Harvestable Drops": [],
+    "Recipe": "",
+    "Scrap Result": [],
+    "Trade": [],
+    "additionalImage": "",
+    "category": "People and Enemies/Enemies",
+    "customDescription": "",
+    "customLocation": "",
+    "description": "",
+    "drops": [
+      [
+        "Royal Pepper",
+        "1",
+        "100%"
+      ],
+      [
+        "Black Gunk",
+        "1",
+        "50%"
+      ]
+    ],
+    "harvestableDrops": [],
+    "image": "https://abioticfactor.wiki.gg/images/b/b9/Bigogi.png?3230e5",
+    "infoboxHeight": 329,
+    "infoboxWidth": 559,
+    "location": "Unknown",
+    "name": "Bigogi",
+    "notes": "",
+    "subcategory": "",
+    "trades": [],
+    "type": "Unknown",
+    "wiki": "https://abioticfactor.wiki.gg/wiki/Bigogi"
+  }
+}

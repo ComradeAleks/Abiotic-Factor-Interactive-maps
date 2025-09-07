@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Map</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="stylesheet" href="/static/css/marker-popup.css" />
+  <link rel="stylesheet" href="/static/css/marker.css" />
+  <link rel="stylesheet" href="/static/css/marker-merging.css" />
+  <link rel="stylesheet" href="/static/css/preset-selector.css" />
+  <link rel="stylesheet" href="/static/css/marker-editor.css" />
+  <link rel="stylesheet" href="/static/css/popup-pinning.css" />
+  <link rel="stylesheet" href="/static/css/popup-animations.css" />
+  <link rel="stylesheet" href="/static/css/item-information-box.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <div id="map-tabs" class="map-tabs"></div>
+
+  <div id="map-container" class="map-container">
+    <div id="leaflet-map" class="leaflet-map"></div>
+  </div>
+
+  <div id="sidebar">
+    <div style="text-align:center; margin-bottom: 10px; margin-top: 10px;">
+      <div style="font-size:1.4em; font-weight:bold;">Abiotic Factor Interactive Map</div>
+      <div style="font-size:0.9em; color:#666;">By ComradeAleks</div>
+    </div>
+    <div id="sidebar-search" style="margin-bottom:10px;">
+      <input type="text" id="category-search" placeholder="Search categories and items..." style="width:100%;padding:5px;">
+    </div>
+    <div id="category-tree"></div>
+    <div id="marker-list"></div>
+  </div>
+
+  <div id="controls">
+    <button id="add-marker-btn">Add</button>
+    <button id="clear-pinned-btn" title="Clear all pinned popups" style="margin-left: 8px;">📌 Clear Pins</button>
+  </div>
+
+  <script src="/static/js/image-loading.js"></script>
+  <script src="/static/js/template-utils.js"></script>
+  <script src="/static/js/Markers/simple-marker-handler.js"></script>
+  <script src="/static/js/Markers/item-marking.js"></script>
+  <script src="/static/js/Markers/popups/popup-pinning.js"></script>
+  <script src="/static/js/Markers/popups/popup-saving.js"></script>
+  <script src="/static/js/sidebar.js"></script>
+  <script src="/static/js/Markers/markers.js"></script>
+  <script src="/static/js/map.js"></script>
+  <script src="/static/js/Markers/marker-merging.js"></script>
+  <script src="/static/js/Markers/marker-adding.js"></script>
+  <script src="/static/js/Markers/marker-editor.js"></script>
+  <script src="/static/js/Markers/popups/marker-popup.js"></script>
+  <!-- InfoBox stuff -->
+  <script src="/static/js/Markers/infoboxes/infoboxdata.js"></script>
+  <script src="/static/js/Markers/infoboxes/infobox-dataViewManager.js"></script>
+  <script src="/static/js/Markers/infoboxes/infobox-save-load.js"></script>
+  <script src="/static/js/Markers/infoboxes/infobox-image.js"></script>
+  <script src="/static/js/Markers/infoboxes/InfoboxUI.js"></script>
+  <script src="/static/js/Markers/infoboxes/ItemInformationBoxManager.js"></script>
+  <script src="/static/js/Markers/infoboxes/ItemInformationBox.js"></script>
+</body>
+</html>

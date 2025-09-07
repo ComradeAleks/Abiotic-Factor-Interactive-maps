@@ -1,0 +1,86 @@
+<!-- Item Information Box Template -->
+<div class="info-header">
+  <button class="info-pin-btn" title="Pin">📌</button>
+  <div class="popup-drag-handle" title="Drag to move">⋮⋮</div>
+  <h3 class="info-title">{{name}} <a href="{{wiki}}" class="wiki-link header-wiki" target="_blank">Wiki</a></h3>
+  <button class="popup-close" title="Close">×</button>
+</div>
+
+<div class="info-content">
+  <div class="info-left">
+    <div class="info-field">
+      <label class="info-label">Category</label>
+      <div class="info-value category-row">
+        <span class="category-value">{{categoryDisplay}}</span>
+        <div class="location-inline">
+          <span class="location-label">Location:</span>
+          <span class="location-value editable-field" data-field="location">{{location}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-field drops-field" style="{{dropsDisplay}}">
+      <label class="info-label">Drops</label>
+      <div class="info-value drops-value">{{drops}}</div>
+    </div>
+
+    <div class="info-field harvestable-field" style="{{harvestableDisplay}}">
+      <label class="info-label">Harvestable Drops</label>
+      <div class="info-value drops-value">{{harvestableDrops}}</div>
+    </div>
+
+    <div class="info-field trades-field" style="{{tradesDisplay}}">
+      <label class="info-label">Trades</label>
+      <div class="info-value trades-value">{{trades}}</div>
+    </div>
+
+    <div class="info-field appears-in-field" style="{{appearsInDisplay}}">
+      <label class="info-label">Appears In</label>
+      <div class="info-value appears-in-value">{{appearsIn}}</div>
+    </div>
+
+    <div class="info-field butchering-field" style="{{butcheringDisplay}}">
+      <label class="info-label">Butchering</label>
+      <div class="info-value butchering-value">{{butchering}}</div>
+    </div>
+
+    <div class="info-field scrap-field" style="{{scrapDisplay}}">
+      <label class="info-label">Scrap Result</label>
+      <div class="info-value scrap-value">{{scrapResult}}</div>
+    </div>
+
+    <div class="info-field recipe-field" style="{{recipeDisplay}}">
+      <label class="info-label">Recipe</label>
+      <div class="info-value recipe-value">{{recipe}}</div>
+    </div>
+
+    <div class="info-field farming-field" style="{{farmingDisplay}}">
+      <label class="info-label">Farming</label>
+      <div class="info-value farming-value">{{farming}}</div>
+    </div>
+
+    <div class="info-field">
+      <label class="info-label">Description</label>
+      <div class="info-value description-value editable-field" data-field="description">{{description}}</div>
+    </div>
+
+    <div class="info-field">
+      <label class="info-label">Notes</label>
+      <div class="info-value notes-value editable-field" data-field="notes" placeholder="Click to add personal notes...">{{notes}}</div>
+    </div>
+  </div>
+
+  <div class="info-right">
+    <div class="image-container">
+      <img src="{{primaryImage}}" alt="{{name}}" class="primary-image" onerror="this.src='/data/assets/Unknown.png'" onclick="InfoboxUI.showImageZoom(this)">
+    </div>
+    
+    <div class="additional-images-container">
+      <!-- Additional images will be dynamically inserted here -->
+    </div>
+    
+    <div class="image-container add-image-container">
+      <button class="add-image-btn" title="Add additional image">+</button>
+    </div>
+  </div>
+</div>

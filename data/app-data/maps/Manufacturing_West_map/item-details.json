@@ -1,0 +1,80 @@
+{
+  "1756892939024_Bag_Wall_Curve": {
+    "Butchering": [],
+    "Drops": [],
+    "Farming": [],
+    "Harvestable Drops": [],
+    "Recipe": [
+      [
+        [
+          "Cement Bag"
+        ],
+        [
+          "Bag Wall (Curve)"
+        ]
+      ]
+    ],
+    "Scrap Result": [
+      "Cement Bag"
+    ],
+    "Trade": [],
+    "additionalImage": "/api/map-images/Office-Complex/Office-Level-1/a75808f3f5004739885cd59b5fc9b0c5.jpg",
+    "category": "Base and Building/Base defense",
+    "customDescription": "",
+    "customLocation": "",
+    "description": "",
+    "drops": [],
+    "harvestableDrops": [],
+    "image": "https://abioticfactor.wiki.gg/images/a/aa/Itemicon_cementbagwall_curve.png?ba234a&format=original",
+    "infoboxHeight": 360,
+    "infoboxWidth": 590,
+    "location": "Unknown",
+    "name": "Bag Wall (Curve)",
+    "notes": "",
+    "subcategory": "",
+    "trades": [],
+    "type": "Unknown",
+    "wiki": "https://abioticfactor.wiki.gg/wiki/Bag_Wall_(Curve)"
+  },
+  "1757067147913_Disc_Turret": {
+    "name": "Disc Turret",
+    "category": "Base and Building/Base defense",
+    "subcategory": "",
+    "wiki": "https://abioticfactor.wiki.gg/wiki/Disc_Turret",
+    "location": "Unknown",
+    "type": "Unknown",
+    "drops": [],
+    "Drops": [],
+    "harvestableDrops": [],
+    "Harvestable Drops": [],
+    "trades": [],
+    "Trade": [],
+    "Butchering": [],
+    "Recipe": [
+      [
+        [
+          "Grinder",
+          "Carbon Plating",
+          "Reinforced Hose",
+          "Box of Screws"
+        ],
+        [
+          "Disc Turret"
+        ]
+      ]
+    ],
+    "Scrap Result": [
+      "Tech Scrap",
+      "Metal Scrap"
+    ],
+    "Farming": [],
+    "description": "",
+    "image": "https://abioticfactor.wiki.gg/images/f/fa/Itemicon_discturret.png?562142&format=original",
+    "additionalImage": "/api/map-images/Office-Complex\\Office-Level-1/5fc85e302c2d4ff08a95bfb8c2f5ee76.jpg",
+    "customDescription": "",
+    "customLocation": "",
+    "notes": "",
+    "infoboxWidth": 358,
+    "infoboxHeight": 371
+  }
+}

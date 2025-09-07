@@ -1,0 +1,20 @@
+{
+  "root": [
+    "Office-Complex",
+    "Manufacturing_West_map.png",
+    "Cascade-labratories",
+    "Security.png",
+    "Hydroplant.png",
+    "Reactormap.png",
+    "ResidenceTerribleMap.png"
+  ],
+  "Office-Complex": [
+    "Office-Level-1.jpg",
+    "Office-Level-3.jpg",
+    "Office-Level-2.jpg"
+  ],
+  "Cascade-labratories": [
+    "Cascade_wildlife.png",
+    "Cascade_containment.png"
+  ]
+}

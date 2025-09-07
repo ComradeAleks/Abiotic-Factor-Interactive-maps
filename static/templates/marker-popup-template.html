@@ -1,0 +1,28 @@
+<!-- Marker popup template -->
+<div class="popup-header">
+  <h3 class="popup-title"></h3>
+  <button class="popup-close">×</button>
+</div>
+<div class="popup-content"></div>
+<div class="popup-buttons">
+  <button class="popup-button edit">Edit Items</button>
+</div>
+
+<template id="popup-item-template">
+  <div class="popup-item" data-index="">
+    <div class="item-image">
+      <img class="item-img" alt="" onerror="this.src='/data/assets/Unknown.png'">
+    </div>
+    <div class="item-info">
+      <div class="item-name"></div>
+      <div class="item-category"></div>
+      <div class="item-link-container"></div>
+      <div class="item-controls">
+        <label class="item-checkbox">
+          <input type="checkbox" class="item-check">
+          <span>Completed</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</template>

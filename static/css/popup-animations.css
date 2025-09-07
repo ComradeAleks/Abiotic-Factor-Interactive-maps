@@ -1,0 +1,217 @@
+.popup-dragging {
+  z-index: 2 !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.8) !important;
+  transform: scale(1.02);
+  transition: none !important;
+}
+
+.popup-pin-animation {
+  animation: popupPin 0.3s ease-out;
+}
+
+@keyframes popupPin {
+  0% {
+    transform: scale(1) rotate(0deg);
+    border-color: transparent;
+  }
+  50% {
+    transform: scale(1.05) rotate(2deg);
+    border-color: #4CAF50;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    border-color: #4CAF50;
+  }
+}
+
+.popup-unpin-animation {
+  animation: popupUnpin 0.2s ease-in forwards;
+}
+
+@keyframes popupUnpin {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+.popup-appear-animation {
+  animation: popupAppear 0.3s ease-out;
+}
+
+@keyframes popupAppear {
+  0% {
+    transform: scale(0.8) translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.popup-disappear-animation {
+  animation: popupDisappear 0.2s ease-in forwards;
+}
+
+@keyframes popupDisappear {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8) translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.pin-feedback-animation {
+  animation: feedbackSlideIn 0.3s ease-out, feedbackFadeOut 0.3s ease-in 2.7s forwards;
+}
+
+@keyframes feedbackSlideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes feedbackFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.popup-drag-handle:hover {
+  animation: dragHandlePulse 0.6s ease-in-out;
+}
+
+@keyframes dragHandlePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.popup-pin-btn:hover {
+  animation: pinButtonWiggle 0.5s ease-in-out;
+}
+
+@keyframes pinButtonWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+.popup-unpin-btn:hover {
+  animation: unpinButtonShake 0.4s ease-in-out;
+}
+
+@keyframes unpinButtonShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+}
+
+.pin-count-update {
+  animation: countUpdate 0.3s ease-out;
+}
+
+@keyframes countUpdate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    color: #4CAF50;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.popup-content-loading {
+  animation: contentLoading 1s ease-in-out infinite;
+}
+
+@keyframes contentLoading {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.popup-pin-btn,
+.popup-unpin-btn,
+.popup-drag-handle {
+  transition: all 0.2s ease;
+}
+
+.popup-pin-animation,
+.popup-unpin-animation,
+.popup-dragging {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+}
+
+@media (max-width: 768px) {
+  .popup-pin-animation,
+  .popup-unpin-animation {
+    animation-duration: 0.2s;
+  }
+  
+  .popup-appear-animation,
+  .popup-disappear-animation {
+    animation-duration: 0.2s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .popup-pin-animation,
+  .popup-unpin-animation,
+  .popup-appear-animation,
+  .popup-disappear-animation,
+  .pin-feedback-animation,
+  .popup-drag-handle:hover,
+  .popup-pin-btn:hover,
+  .popup-unpin-btn:hover {
+    animation: none;
+  }
+  
+  .popup-pin-btn,
+  .popup-unpin-btn,
+  .popup-drag-handle {
+    transition: none;
+  }
+}
