@@ -4,13 +4,40 @@ import json
 import base64
 import uuid
 import re
+import sys
+import threading
+import time
+try:
+    from version_checker import get_window_title
+except ImportError:
+    def get_window_title():
+        return "Abiotic Factor Interactive Maps"
+
+# Handle PyInstaller bundle paths
+def get_base_dir():
+    if getattr(sys, 'frozen', False):
+        # Running as compiled executable
+        return os.path.dirname(sys.executable)
+    else:
+        # Running as script
+        return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Get the directory containing this script and its parent directory
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = get_base_dir()
+
+# Handle template and static folders for both script and executable modes
+if getattr(sys, 'frozen', False):
+    # Running as compiled executable - templates and static are bundled
+    template_folder = os.path.join(sys._MEIPASS, 'Main_Files')
+    static_folder = os.path.join(sys._MEIPASS, 'static')
+else:
+    # Running as script
+    template_folder = os.path.dirname(__file__)
+    static_folder = os.path.join(BASE_DIR, 'static')
 
 app = Flask(__name__, 
-    template_folder=os.path.dirname(__file__), 
-    static_folder=os.path.join(BASE_DIR, 'static')
+    template_folder=template_folder, 
+    static_folder=static_folder
 )
 
 SHOW_HTTP_LOGS = True
@@ -651,8 +678,83 @@ def cleanup_marker_items(marker, map_name):
 
 if __name__ == "__main__":
     import logging
+    
     if not SHOW_HTTP_LOGS:
         log = logging.getLogger('werkzeug')
         log.setLevel(logging.ERROR)
     
-    app.run(debug=DEBUG_MODE)
+    # If running as executable, create native desktop window
+    if getattr(sys, 'frozen', False):
+        try:
+            import webview
+            
+            def start_flask():
+                """Start Flask server in a separate thread"""
+                app.run(debug=False, host='127.0.0.1', port=5000, use_reloader=False)
+            
+            # Start Flask in background thread
+            flask_thread = threading.Thread(target=start_flask)
+            flask_thread.daemon = True
+            flask_thread.start()
+            
+            # Wait a moment for Flask to start
+            time.sleep(2)
+            
+            # Create native desktop window
+            window_title = get_window_title()
+            webview.create_window(
+                title=window_title,
+                url='http://127.0.0.1:5000',
+                width=1400,
+                height=900,
+                min_size=(1000, 700),
+                resizable=True,
+                maximized=False,
+                on_top=False,
+                shadow=True
+            )
+            
+            # Start the webview (this blocks until window is closed)
+            webview.start(debug=False)
+            
+        except ImportError:
+            # just in case, if not working do browser
+            import webbrowser
+            
+            def open_browser():
+                """Open browser after a short delay to ensure server is running"""
+                time.sleep(1.5)
+                webbrowser.open('http://127.0.0.1:5000')
+            
+            # Start browser in a separate thread
+            browser_thread = threading.Thread(target=open_browser)
+            browser_thread.daemon = True
+            browser_thread.start()
+            
+            print("Abiotic Factor Interactive Maps is starting...")
+            print("The application will open in your browser automatically.")
+            print("If it doesn't open automatically, navigate to: http://127.0.0.1:5000")
+            print("Press Ctrl+C to stop the server.")
+            
+            app.run(debug=False, host='127.0.0.1', port=5000)
+        
+    else:
+        # if running as script use browser instead
+        import webbrowser
+        
+        def open_browser():
+            """Open browser after a short delay to ensure server is running"""
+            time.sleep(1.5)
+            webbrowser.open('http://127.0.0.1:5000')
+        
+        # Start browser in a separate thread
+        browser_thread = threading.Thread(target=open_browser)
+        browser_thread.daemon = True
+        browser_thread.start()
+        
+        print("Abiotic Factor Interactive Maps is starting...")
+        print("The application will open in your browser automatically.")
+        print("If it doesn't open automatically, navigate to: http://127.0.0.1:5000")
+        print("Press Ctrl+C to stop the server.")
+        
+        app.run(debug=DEBUG_MODE, host='127.0.0.1', port=5000)
