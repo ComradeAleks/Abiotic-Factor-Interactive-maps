@@ -50,6 +50,14 @@ When you enter a map folder, you will see it can contain 4 things:
 3. **markers.txt** - This is a txt file with JSON format where every marker on the map is located
 4. **[mapname].png/.jpg** - The map image (changing the image obviously will change the map in the app)
 
+## Future fixes and addons
+
+- gonna add so that the Add button changes color when you click it to show that it is clicked
+- settings for increasing marker size adding marker background
+- removing that tiny annoying scrollbar that is where the maps are
+- making an overflow for maps so that if you add 100 maps it wont just squish the images.
+- some other stuff too probably
+
 ## Contributing
 
 Feel free to contribute to this project by:
